@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Ouerghemmi Optique | gérer  catégories et produits</title>
+        <title>Ouerghemmi Optique | Gérer  catégories et produits</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -14,6 +14,9 @@
         <link href="../../css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" type="text/css" href="../../pages/wifek/style.css">
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -315,8 +318,15 @@
                             </a>
                         </li>
                     <li>
-                            <a href="categorie.html">
-                                <i ></i> <span>Gérer catégories et produits</span>
+                            <a href="../wifek/categorie.php">
+                                <i ></i> <span>Gérer catégories </span>
+                                <small class="badge pull-right bg-red"></small>
+                            </a>
+                        </li>
+                         
+                         <li>
+                            <a href="produits.html">
+                                <i ></i> <span>Gérer Produits </span>
                                 <small class="badge pull-right bg-red"></small>
                             </a>
                         </li>
@@ -437,7 +447,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        tableau des clients
+                        Catégories
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Acceuil</a></li>
@@ -452,17 +462,15 @@
                         <div class="col-xs-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h3 class="box-title">Liste des produits</h3>                                    
+                                    <h3 class="box-title">Liste des Catégories</h3>                                    
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-hover">
                                         <thead>
                                             <tr>
-                                                <th> référence produit</th>
-                                                <th>catégorie</th>
-                                                <th>couleurs disponnibles</th>
-                                                <th>prix</th>
-                                                <th>action</th>
+                                                <th>Id Catégories</th>
+                                                <th>Nom Catégories</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -470,75 +478,92 @@
                                           
                                             <tr>
                                                 <td></td>
-                                                <td>All others</td>
-                                                <td>-</td>
-                                                <td>-</td>
+                                                <td></td>
                                                 <td>
-                                                    <img src="icon.png" class="consult">
-                                                   <img src="sup.png" class="consult">
-                                                   <img src="plus.png" class="consult">
+                                                   <img src="plus.png" id="myBtn1" class="consult">
+                                                   <img src="icon.png" id="myBtn2" class="consult">
+                                                   <img src="sup.png" id="myBtn3" class="consult">                                                  
 
                                                 </td>
 
                                             </tr>
                                         </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>référence produit</th>
-                                                <th>catégorie</th>
-                                                <th>couleur disponibles</th>
-                                                <th>prix</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </tfoot>
                                     </table>
+<!-- KHEDMTIIIIIIII -->
+                                    	<!-- The Modal -->
+								<div id="myModal1" class="modal1">
+
+								  <!-- Modal content -->
+								  <div class="modal-content1">
+								    <span class="close1">&times;</span>
+									<h2>Modifier Catégories</h2>
+								    <table>
+										  <tr>
+                                                <th>Nom Catégories</th>
+                                               
+										  </tr>
+
+										<tr>
+										  <th>
+													<input type="text" name="">
+										  </th>
+										</tr>
+
+									</table>
+
+									<br>
+									<button class="add1"> Modifier </button>
+									<br>
+
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+
+
+
+                                    <!-- KHEDMTIIIIIIII -->
+                                    	<!-- The Modal -->
+								<div id="myModal2" class="modal2">
+
+								  <!-- Modal content -->
+								  <div class="modal-content2">
+								    <span class="close2">&times;</span>
+									<h2>Ajouter Catégories</h2>
+                                    <form method="post" action="ajouterCat.php"> 
+
+								    <table>
+										  <tr>
+                                                <th>ID Catégories</th>
+                                                <th>Nom Catégories</th>
+                                               
+										  </tr>
+
+										<tr>
+
+                                          <th>
+                                                    <input type="number" min="0" name="id_categorie">
+                                          </th>
+										  <th>
+													<input type="text" name="nom_categorie">
+										  </th>
+										</tr>
+
+                                    <br>
+                                    <input type="submit" name="ajouter" class="add2" value="Ajouter" >
+                                    <br>
+
+									</table>
+                                </form>
+
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">Chercher produit</h3>                                    
-                                </div><!-- /.box-header -->
-                                <div class="box-body table-responsive">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>référence</th>
-                                                <th>catégorie</th>
-                                                <th>couleurs disponibles</th>
-                                                <th>prix</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Trident</td>
-                                                <td>Internet
-                                                    Explorer 4.0</td>
-                                                <td>Win 95+</td>
-                                                <td> 4</td>
-                                                <td>X</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>référence</th>
-                                                <th>catégorie</th>
-                                                <th>couleurs disponibles</th>
-                                                <th>prix</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-                        </div>
+                           
                     </div>
-
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
+
+        <script type="text/javascript" src="../../pages/wifek/categorie.js"></script>
 
 
         <!-- jQuery 2.0.2 -->

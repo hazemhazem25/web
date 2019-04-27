@@ -1,0 +1,49 @@
+
+              <div id="myModale" class="modale">
+
+                                  <!-- Modal content -->
+                                  <div class="modale-content">
+                                    <span class="close">&times;</span>
+                                    <h2 class="titre">Ajouter un abonné</h2>
+                                    <form name="f">
+                                    <table>
+                                          <tr>
+                                                <td><label>Numéro abonné:</label>
+                                             <input type="text" placeholder="Id produit" name="reference" class="ide">
+                                            </td>
+
+                                              </tr>
+                                              <tr>
+                                                <td><label>Adresse Mail :</label>
+                                                        <input type="text" placeholder="imen@esprit.tn" name="reference" class="nome">                                          
+
+ </td>
+                                                </tr>
+                                                
+                                            <tr>
+                                                <td><label>Date d'ajout:</label>
+                                                        <input type="Date" placeholder="Black friday exemple" name="reference" class="datee">
+
+
+
+                                                </td>
+                                            </tr>
+                                            
+                                        
+                                    </table>
+
+
+                                    <br>
+                                    <button class="adde"> Ajouter </button>
+                                    <br>
+</form>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                    </div>
+
+
+
+
+
+
+

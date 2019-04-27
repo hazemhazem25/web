@@ -262,7 +262,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Profile</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="se_connecter.html" class="btn btn-default btn-flat">déconnexion</a>
+                                        <a href="http://localhost/git/web/views/back office/pages/nour/authentification/se_connecter.php" class="btn btn-default btn-flat">déconnexion</a>
                                     </div>
                                 </li>
                             </ul>
@@ -480,14 +480,15 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <img src="src/icon.png" class="consult">
-                                                   <img src="src/sup.png" class="consult">
+                                                    <a href="http://localhost/git/web/views/back office/pages/nour/client/affichermodifClient.php"><img src="src/icon.png" class="consult"></a>
+                                                  <a href="http://localhost/git/web/views/front_office/nour/client/affichersuppClient.php"> <img src="src/sup.png" class="consult"></a>>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="src/plus.png" class="consult"></button>  
                                                    <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form name="ajouter_client" class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Ajouter un admin</h1>
+
+      <h1>Ajouter un client</h1>
       <hr>
       <label for="email"><b>Email</b></label></br>
       <input type="text" placeholder="Email" name="email" required></br>
