@@ -10,6 +10,7 @@ var_dump($employe1);
 }
 */
 //Partie3
+
 $produit1C=new ProduitC();
 $produit1C->ajouterProduit($produit1);
 header('Location: produits.php');
