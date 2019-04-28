@@ -5,6 +5,7 @@ ob_start();
 <html>
 
     <head>
+        
         <meta charset="UTF-8">
         <title>Ouerghemmi Optique | gérer promotion</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
