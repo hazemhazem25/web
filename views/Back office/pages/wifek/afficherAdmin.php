@@ -3,6 +3,7 @@ include "../../../../core/adminC.php";
 $admin1C=new AdminC();
 $listeAdmins=$admin1C->afficherAdmins();
 
+
 ?>
 
 
