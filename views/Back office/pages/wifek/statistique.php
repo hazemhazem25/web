@@ -1,5 +1,6 @@
 <?php 
 //index.php
+
 $connect = mysqli_connect("localhost", "root", "", "projet");
 $query = "SELECT * FROM produit";
 $result = mysqli_query($connect, $query);
