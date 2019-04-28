@@ -2,7 +2,6 @@
 include "C:/wamp/www/tryyyy/core/produitC.php";
 require ('db.php');
 
-
 ob_start();
 ?>
 <page backtop="20mm">
