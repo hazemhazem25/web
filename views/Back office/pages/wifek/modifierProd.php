@@ -1,6 +1,8 @@
 <?php
 ob_start();
 
+
+
 ?>
 <?PHP
 include "../../../../entities/produitt.php";
