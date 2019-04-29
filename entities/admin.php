@@ -6,6 +6,7 @@
 		private $mdp_admin;
 		private $nom_admin;
 		private $pre_admin;
+	}
 
 		public function get_id()
 		{
