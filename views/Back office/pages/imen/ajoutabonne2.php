@@ -14,7 +14,7 @@ header('Location: abonne.php');
 }
 else
 {
-	echo "kha";
+	echo "erreur";
 }
 
 if($mail==null)
